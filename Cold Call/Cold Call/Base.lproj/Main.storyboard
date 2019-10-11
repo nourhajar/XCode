@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cold_Call" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39T-i4-g3X">
+                                <rect key="frame" x="106.5" y="44" width="201" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0F-bD-kSN">
+                                <rect key="frame" x="132" y="812" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.092711164900372345" green="0.91510855847282646" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ERf-E2-shc"/>
+                                    <constraint firstAttribute="width" constant="150" id="lma-vw-siM"/>
+                                </constraints>
+                                <state key="normal" title="Cold Call">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="coldCallButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ax7-OJ-ssJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyH-Ua-DOS">
+                                <rect key="frame" x="53.5" y="394" width="307" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZyH-Ua-DOS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0lV-ry-0JS"/>
+                            <constraint firstItem="I0F-bD-kSN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="74i-0W-yV6"/>
+                            <constraint firstItem="39T-i4-g3X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7ou-cB-6t6"/>
+                            <constraint firstItem="I0F-bD-kSN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9Zr-aH-yhX"/>
+                            <constraint firstItem="I0F-bD-kSN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hxq-Zt-ELl"/>
+                            <constraint firstItem="39T-i4-g3X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jcc-OF-boS"/>
+                            <constraint firstItem="ZyH-Ua-DOS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xS8-ZG-BW1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="coldCallButton" destination="I0F-bD-kSN" id="WwO-fm-6m3"/>
+                        <outlet property="nameLabel" destination="39T-i4-g3X" id="h5a-9U-WIw"/>
+                        <outlet property="numberLabel" destination="ZyH-Ua-DOS" id="8Vn-k9-TKb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
